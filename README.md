@@ -8,7 +8,7 @@
 **DataPrep Kit** is a professional-grade, AI-augmented data preparation environment designed for data scientists, ML engineers, and analysts. It transforms the often-tedious "80% of data work" into a streamlined, interactive, and fully reproducible experience.
 
 
-[![Watch the demo](https://github.com/hima12-awny/dataprep-kit/blob/main/assets/dataprep-kit-demo.mp4)
+[Watch the demo](https://github.com/hima12-awny/dataprep-kit/blob/main/assets/dataprep-kit-demo.mp4)
 ---
 
 ## 🌟 Why DataPrep Kit?
