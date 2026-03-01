@@ -1,0 +1,7 @@
+from recommendations.static.base_analyzer import BaseAnalyzer
+from recommendations.static.missing_analyzer import MissingAnalyzer
+from recommendations.static.type_analyzer import TypeAnalyzer
+from recommendations.static.outlier_analyzer import OutlierAnalyzer
+from recommendations.static.duplicate_analyzer import DuplicateAnalyzer
+from recommendations.static.text_analyzer import TextAnalyzer
+from recommendations.static.feature_analyzer import FeatureAnalyzer

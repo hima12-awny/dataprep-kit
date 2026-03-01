@@ -1,0 +1,1 @@
+# Actions package — all transform actions follow the BaseAction interface

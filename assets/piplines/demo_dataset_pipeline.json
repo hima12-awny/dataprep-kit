@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.0.0",
+  "pipeline_id": "pipeline_20260226011936_cf039d",
+  "created_at": "2026-02-26T01:19:36.915598+00:00",
+  "exported_at": "2026-02-26T02:04:39.564327+00:00",
+  "metadata": {
+    "source_name": "demo_dataset.csv",
+    "import_config": {
+      "format": "csv",
+      "delimiter": ",",
+      "encoding": "utf-8",
+      "header_row": 0,
+      "index_col": null,
+      "sample_rows": null
+    },
+    "created_at": "2026-02-26T01:19:36.914597+00:00",
+    "original_shape": {
+      "rows": 50,
+      "columns": 10
+    },
+    "current_shape": {
+      "rows": 50,
+      "columns": 11
+    }
+  },
+  "steps": [
+    {
+      "action_id": "rec_19e28804",
+      "action_type": "text_cleaning",
+      "description": "Clean text in 'city': trim_whitespace, collapse_whitespace, lowercase",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:29:13.302769+00:00",
+      "parameters": {
+        "columns": [
+          "city"
+        ],
+        "operations": [
+          "trim_whitespace",
+          "collapse_whitespace",
+          "lowercase"
+        ]
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_4698cd5b",
+      "action_type": "text_cleaning",
+      "description": "Clean text in 'name': trim_whitespace, collapse_whitespace",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:29:44.265947+00:00",
+      "parameters": {
+        "columns": [
+          "name"
+        ],
+        "operations": [
+          "trim_whitespace",
+          "collapse_whitespace"
+        ]
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_e6376e6c",
+      "action_type": "text_cleaning",
+      "description": "Clean text in 'department': lowercase",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:31:36.806521+00:00",
+      "parameters": {
+        "columns": [
+          "department"
+        ],
+        "operations": [
+          "lowercase"
+        ]
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_c6832942",
+      "action_type": "text_cleaning",
+      "description": "Clean text in 'is_active': lowercase",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:32:31.291183+00:00",
+      "parameters": {
+        "columns": [
+          "is_active"
+        ],
+        "operations": [
+          "lowercase"
+        ]
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_897ff13c",
+      "action_type": "handle_missing",
+      "description": "Impute 'age' (3 missing values) using median",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:33:23.862279+00:00",
+      "parameters": {
+        "columns": [
+          "age"
+        ],
+        "strategy": "median"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_df76d6be",
+      "action_type": "handle_missing",
+      "description": "Impute 'email' (3 missing values) using mode",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:33:42.809619+00:00",
+      "parameters": {
+        "columns": [
+          "email"
+        ],
+        "strategy": "mode"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_8e0f4048",
+      "action_type": "handle_missing",
+      "description": "Impute 'salary' (4 missing values) using median",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:33:51.271021+00:00",
+      "parameters": {
+        "columns": [
+          "salary"
+        ],
+        "strategy": "median"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_8f8db304",
+      "action_type": "handle_missing",
+      "description": "Impute 'department' (1 missing values) using mode",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:34:01.110913+00:00",
+      "parameters": {
+        "columns": [
+          "department"
+        ],
+        "strategy": "mode"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_f292e5ab",
+      "action_type": "handle_missing",
+      "description": "Impute 'rating' (3 missing values) using median",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:34:11.177588+00:00",
+      "parameters": {
+        "columns": [
+          "rating"
+        ],
+        "strategy": "median"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_9d55c71a",
+      "action_type": "handle_outliers",
+      "description": "Handle 4 outliers in 'salary' (8.0%) using IQR method \u2192 clip",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:34:17.844086+00:00",
+      "parameters": {
+        "columns": [
+          "salary"
+        ],
+        "method": "iqr",
+        "threshold": 1.5,
+        "behavior": "clip"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_8fc20f37",
+      "action_type": "handle_missing",
+      "description": "Impute 'is_active' (1 missing values) using mode",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:34:24.866561+00:00",
+      "parameters": {
+        "columns": [
+          "is_active"
+        ],
+        "strategy": "mode"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_6114ab9d",
+      "action_type": "handle_outliers",
+      "description": "Handle 1 outliers in 'rating' (2.0%) using IQR method \u2192 flag",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:34:27.470337+00:00",
+      "parameters": {
+        "columns": [
+          "rating"
+        ],
+        "method": "iqr",
+        "threshold": 1.5,
+        "behavior": "flag"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_87f4c4b3",
+      "action_type": "handle_outliers",
+      "description": "Handle 1 outliers in 'rating' (2.0%) using IQR method \u2192 flag",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:34:31.514286+00:00",
+      "parameters": {
+        "columns": [
+          "rating"
+        ],
+        "method": "iqr",
+        "threshold": 1.5,
+        "behavior": "flag"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_30c80980",
+      "action_type": "type_casting",
+      "description": "Convert 'join_date' from object to datetime64[ns] (confidence: 100%)",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:35:22.216805+00:00",
+      "parameters": {
+        "conversions": {
+          "join_date": "datetime64[ns]"
+        },
+        "errors": "coerce"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_6fbda3e7",
+      "action_type": "type_casting",
+      "description": "Convert 'is_active' from object to bool (confidence: 100%)",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:35:49.021166+00:00",
+      "parameters": {
+        "conversions": {
+          "is_active": "bool"
+        },
+        "errors": "coerce"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_47226d1e",
+      "action_type": "type_casting",
+      "description": "Convert 'is_active' from bool to category (confidence: 96%)",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:36:26.066948+00:00",
+      "parameters": {
+        "conversions": {
+          "is_active": "category"
+        },
+        "errors": "coerce"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "rec_4e244083",
+      "action_type": "type_casting",
+      "description": "Convert 'rating_outlier_flag' from int64 to category (confidence: 96%)",
+      "author": "ai_static",
+      "timestamp": "2026-02-26T01:36:27.756293+00:00",
+      "parameters": {
+        "conversions": {
+          "rating_outlier_flag": "category"
+        },
+        "errors": "coerce"
+      },
+      "preview_only": false,
+      "enabled": true
+    },
+    {
+      "action_id": "02208ec7",
+      "action_type": "handle_missing",
+      "description": "Impute missing values in ['join_date'] using mode",
+      "author": "user",
+      "timestamp": "2026-02-26T02:04:05.886055+00:00",
+      "parameters": {
+        "columns": [
+          "join_date"
+        ],
+        "strategy": "mode",
+        "fill_value": null
+      },
+      "preview_only": false,
+      "enabled": true
+    }
+  ],
+  "change_log": [
+    {
+      "change_type": "add",
+      "action_id": "rec_19e28804",
+      "description": "Clean text in 'city': trim_whitespace, collapse_whitespace, lowercase",
+      "timestamp": "2026-02-26T01:29:44.156812+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_4698cd5b",
+      "description": "Clean text in 'name': trim_whitespace, collapse_whitespace",
+      "timestamp": "2026-02-26T01:31:36.704173+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_e6376e6c",
+      "description": "Clean text in 'department': lowercase",
+      "timestamp": "2026-02-26T01:32:31.192754+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_c6832942",
+      "description": "Clean text in 'is_active': lowercase",
+      "timestamp": "2026-02-26T01:33:23.769305+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_897ff13c",
+      "description": "Impute 'age' (3 missing values) using median",
+      "timestamp": "2026-02-26T01:33:42.699925+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_df76d6be",
+      "description": "Impute 'email' (3 missing values) using mode",
+      "timestamp": "2026-02-26T01:33:51.187288+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_8e0f4048",
+      "description": "Impute 'salary' (4 missing values) using median",
+      "timestamp": "2026-02-26T01:34:01.025485+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_8f8db304",
+      "description": "Impute 'department' (1 missing values) using mode",
+      "timestamp": "2026-02-26T01:34:11.091651+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_f292e5ab",
+      "description": "Impute 'rating' (3 missing values) using median",
+      "timestamp": "2026-02-26T01:34:17.734195+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_9d55c71a",
+      "description": "Handle 4 outliers in 'salary' (8.0%) using IQR method \u2192 clip",
+      "timestamp": "2026-02-26T01:34:24.762455+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_8fc20f37",
+      "description": "Impute 'is_active' (1 missing values) using mode",
+      "timestamp": "2026-02-26T01:34:27.380675+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_6114ab9d",
+      "description": "Handle 1 outliers in 'rating' (2.0%) using IQR method \u2192 flag",
+      "timestamp": "2026-02-26T01:34:31.418565+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_87f4c4b3",
+      "description": "Handle 1 outliers in 'rating' (2.0%) using IQR method \u2192 flag",
+      "timestamp": "2026-02-26T01:34:35.282614+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_30c80980",
+      "description": "Convert 'join_date' from object to datetime64[ns] (confidence: 100%)",
+      "timestamp": "2026-02-26T01:35:48.891741+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_6fbda3e7",
+      "description": "Convert 'is_active' from object to bool (confidence: 100%)",
+      "timestamp": "2026-02-26T01:36:25.962503+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_47226d1e",
+      "description": "Convert 'is_active' from bool to category (confidence: 96%)",
+      "timestamp": "2026-02-26T01:36:27.650788+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "rec_4e244083",
+      "description": "Convert 'rating_outlier_flag' from int64 to category (confidence: 96%)",
+      "timestamp": "2026-02-26T01:36:29.427003+00:00"
+    },
+    {
+      "change_type": "add",
+      "action_id": "02208ec7",
+      "description": "Impute missing values in ['join_date'] using mode",
+      "timestamp": "2026-02-26T02:04:05.886055+00:00"
+    }
+  ]
+}

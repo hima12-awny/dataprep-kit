@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "DataPrep Kit Action Schema",
+    "type": "object",
+    "required": [
+        "action_type",
+        "parameters"
+    ],
+    "properties": {
+        "action_id": {
+            "type": "string",
+            "description": "Unique identifier for this action instance"
+        },
+        "action_type": {
+            "type": "string",
+            "description": "Type of action to perform",
+            "enum": [
+                "handle_missing",
+                "handle_duplicates",
+                "handle_outliers",
+                "text_cleaning",
+                "inconsistency",
+                "type_casting",
+                "datetime_ops",
+                "numeric_transform",
+                "encoding",
+                "column_ops",
+                "aggregation",
+                "temporal",
+                "interaction"
+            ]
+        },
+        "description": {
+            "type": "string",
+            "description": "Human-readable description of this action"
+        },
+        "author": {
+            "type": "string",
+            "description": "Who created this action",
+            "enum": [
+                "user",
+                "ai",
+                "ai_static",
+                "ai_agent"
+            ]
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 timestamp when action was created"
+        },
+        "parameters": {
+            "type": "object",
+            "description": "Action-specific parameters"
+        },
+        "preview_only": {
+            "type": "boolean",
+            "default": false,
+            "description": "If true, action is for preview only and won't be executed"
+        },
+        "enabled": {
+            "type": "boolean",
+            "default": true,
+            "description": "If false, action will be skipped during pipeline execution"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+id,name,age,email,salary,department,join_date,rating,city,is_active
+1,John Smith,28,john@example.com,55000,Engineering,2022-01-15,4.5,New York,yes
+2, Jane Doe ,35,jane@example.com,72000,Marketing,2021-06-20,3.8,  Los Angeles,true
+3,Bob Johnson,45,bob@example.com,,Engineering,2020-03-10,4.2,Chicago,1
+4,Alice Brown,28,alice@example.com,55000,Engineering,2022-01-15,4.5,New York,yes
+5,Charlie Wilson,,charlie@example.com,48000,Sales,2023-02-28,,San Francisco,Y
+6,EVA MARTINEZ,31,eva@example.com,65000,Marketing,2021-11-05,4.0,los angeles,True
+7,frank lee,29,,62000,Engineering,2022-08-14,3.5,chicago,yes
+8,Grace Kim,NULL,grace@example.com,150000,Sales,2019-07-22,4.8,New York,no
+9,Henry Chen,33,henry@example.com,58000,,2022-04-30,3.9,San Francisco,false
+10,Ivy Wang,27,ivy@example.com,51000,Engineering,15/06/2023,4.1,Chicago,Y
+11,  Jack Brown ,42,jack@example.com,78000,Marketing,2020-09-01,2.5,New York,TRUE
+12,Kate Davis,38,kate@example.com,69000,Sales,2021-01-18,,Los Angeles,0
+13,Leo Martin,55,leo@example.com,95000,Engineering,2018-12-03,4.9,San Francisco,yes
+14,Mia Lopez,26,mia@example.com,47000,marketing,2023-07-10,3.2,chicago,True
+15,Noah Taylor,31,noah@example.com,52000,Sales,2022-11-25,3.7,New York,yes
+16,Olivia White,34,,71000,Engineering,2021-03-08,4.3,Los Angeles,no
+17,Pete Green,29,pete@example.com,53000,Marketing,2022-06-14,3.6, san francisco ,true
+18,Quinn Harris,36,quinn@example.com,-5000,Sales,2020-08-19,4.0,Chicago,yes
+19,Ruby Clark,41,ruby@example.com,82000,Engineering,2019-04-27,4.7,New York,False
+20,Sam Adams,44,sam@example.com,,Marketing,2020-01-12,1.5,Los Angeles,N
+21,Uma Patel,23,uma@example.com,47000,HR,2022-03-12,4.0,Boston,yes
+22,Vincent King,47,vincent@example.com,120000,Finance,2018-05-21,4.9,San Diego,TRUE
+23,Wendy Li,38,wendy@example.com,94000,engineering,2021-07-18,3.8,austin,null
+24,Xavier Gomez,52,xavier@example.com,107000,Sales,2017-11-29,4.4,Dallas,Yes
+25,Yara Singh,27,yara@example.com,,Sales,2022-09-03,4.7,Denver,no
+26,Zach Young,40,zach@example.com,67000,Marketing,2019-02-16,3.6,Seattle,TRUE
+27,Anna Bell,31,annab@example.com,90000,Operations,2020-01-10,4.6,Miami,False
+28,Ben Fox,,benf@example.com,76500,HR,2021-04-11,4.2,Boston,1
+29,Cara Cruz,36,caracruz@example.com,69000,Finance,2023-06-12,2.9,San Diego,false
+30,Dan Lee,29,dlee@example.com,53000,IT,2022-08-01,3.4,Houston,TRUE
+31,Ella Stone,28,ella@example.com,48000,Research,2022-11-20,,Seattle,0
+32,Frank Knight,50,frankk@example.com,135000,Executive,2015-09-22,4.8,Chicago,yes
+33,Gina Ray,34,gina@example.com,79000,Marketing,2023-01-01,3.7,new york,true
+34,Hugo McCoy,45,hugom@example.com,99000,Engineering,2016-04-15,4.1,Phoenix,n
+35,Iris Bloom,30,iris@example.com,54000,Sales,2022-12-12,4.0,Dallas,Y
+36,Jay Lin,51,jaylin@example.com,112000,Finance,2018-07-10,4.6,Los Angeles,T
+37,Kendall Yu,22,kendally@example.com,47000,engineering,2023-02-28,3.0,san francisco,yes
+38,Liam Howard,41,liamh@example.com,,IT,2017-10-01,4.1,Miami,TRUE
+39,Mona Wright,39,mona@example.com,85000,Sales,2021-09-09,3.5,Seattle,no
+40,Ned Ash,27,ned@example.com,48000,Engineering,2022-11-11,2.6,Austin,YES
+41,Oscar Price,37,,80000,Operations,2020-05-02,3.3,Chicago,0
+42,Penelope Quinn,30,penelope@example.com,51000,Research,2023-03-17,2.8,San Francisco,true
+43,Rick Sims,42,rick@example.com,92000,Finance,2019-12-19,4.8,Seattle,False
+44,Sara James,24,sara@example.com,47000,Sales,2022-06-06,4.5,Boston,1
+45,Tara Brook,33,tarab@example.com,78000,Marketing,2021-08-15,3.4,Los Angeles,FALSE
+46,Umar Reed,35,umar@example.com,69000,Engineering,2019-03-17,4.2,Phoenix,Yes
+47,Violet Cruz,29,violet@example.com,59000,Sales,2022-05-05,4.1,Dallas,y
+48,Wyatt Moss,53,wyatt@example.com,140000,Finance,2014-06-18,5.0,San Diego,TRUE
+49,Xena Lane,32,xena@example.com,60000,IT,2019-10-22,4.1,Seattle,yes
+50,Yusuf Amir,26,yusuf@example.com,52000,Engineering,2023-03-01,3.9,Boston,TRUE

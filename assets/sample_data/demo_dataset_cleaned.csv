@@ -1,0 +1,51 @@
+id,name,age,email,salary,department,join_date,rating,city,is_active,rating_outlier_flag
+1,John Smith,28.0,john@example.com,55000.0,engineering,2022-01-15,4.5,new york,True,0
+2,Jane Doe,35.0,jane@example.com,72000.0,marketing,2021-06-20,3.8,los angeles,True,0
+3,Bob Johnson,45.0,bob@example.com,68000.0,engineering,2020-03-10,4.2,chicago,True,0
+4,Alice Brown,28.0,alice@example.com,55000.0,engineering,2022-01-15,4.5,new york,True,0
+5,Charlie Wilson,34.0,charlie@example.com,48000.0,sales,2023-02-28,4.0,san francisco,True,0
+6,EVA MARTINEZ,31.0,eva@example.com,65000.0,marketing,2021-11-05,4.0,los angeles,True,0
+7,frank lee,29.0,alice@example.com,62000.0,engineering,2022-08-14,3.5,chicago,True,0
+8,Grace Kim,34.0,grace@example.com,124250.0,sales,2019-07-22,4.8,new york,False,0
+9,Henry Chen,33.0,henry@example.com,58000.0,engineering,2022-04-30,3.9,san francisco,False,0
+10,Ivy Wang,27.0,ivy@example.com,51000.0,engineering,2022-01-15,4.1,chicago,True,0
+11,Jack Brown,42.0,jack@example.com,78000.0,marketing,2020-09-01,2.5,new york,True,0
+12,Kate Davis,38.0,kate@example.com,69000.0,sales,2021-01-18,4.0,los angeles,False,0
+13,Leo Martin,55.0,leo@example.com,95000.0,engineering,2018-12-03,4.9,san francisco,True,0
+14,Mia Lopez,26.0,mia@example.com,47000.0,marketing,2023-07-10,3.2,chicago,True,0
+15,Noah Taylor,31.0,noah@example.com,52000.0,sales,2022-11-25,3.7,new york,True,0
+16,Olivia White,34.0,alice@example.com,71000.0,engineering,2021-03-08,4.3,los angeles,False,0
+17,Pete Green,29.0,pete@example.com,53000.0,marketing,2022-06-14,3.6,san francisco,True,0
+18,Quinn Harris,36.0,quinn@example.com,10250.0,sales,2020-08-19,4.0,chicago,True,0
+19,Ruby Clark,41.0,ruby@example.com,82000.0,engineering,2019-04-27,4.7,new york,False,0
+20,Sam Adams,44.0,sam@example.com,68000.0,marketing,2020-01-12,1.5,los angeles,False,1
+21,Uma Patel,23.0,uma@example.com,47000.0,hr,2022-03-12,4.0,boston,True,0
+22,Vincent King,47.0,vincent@example.com,120000.0,finance,2018-05-21,4.9,san diego,True,0
+23,Wendy Li,38.0,wendy@example.com,94000.0,engineering,2021-07-18,3.8,austin,True,0
+24,Xavier Gomez,52.0,xavier@example.com,107000.0,sales,2017-11-29,4.4,dallas,True,0
+25,Yara Singh,27.0,yara@example.com,68000.0,sales,2022-09-03,4.7,denver,False,0
+26,Zach Young,40.0,zach@example.com,67000.0,marketing,2019-02-16,3.6,seattle,True,0
+27,Anna Bell,31.0,annab@example.com,90000.0,operations,2020-01-10,4.6,miami,False,0
+28,Ben Fox,34.0,benf@example.com,76500.0,hr,2021-04-11,4.2,boston,True,0
+29,Cara Cruz,36.0,caracruz@example.com,69000.0,finance,2023-06-12,2.9,san diego,False,0
+30,Dan Lee,29.0,dlee@example.com,53000.0,it,2022-08-01,3.4,houston,True,0
+31,Ella Stone,28.0,ella@example.com,48000.0,research,2022-11-20,4.0,seattle,False,0
+32,Frank Knight,50.0,frankk@example.com,124250.0,executive,2015-09-22,4.8,chicago,True,0
+33,Gina Ray,34.0,gina@example.com,79000.0,marketing,2023-01-01,3.7,new york,True,0
+34,Hugo McCoy,45.0,hugom@example.com,99000.0,engineering,2016-04-15,4.1,phoenix,False,0
+35,Iris Bloom,30.0,iris@example.com,54000.0,sales,2022-12-12,4.0,dallas,True,0
+36,Jay Lin,51.0,jaylin@example.com,112000.0,finance,2018-07-10,4.6,los angeles,True,0
+37,Kendall Yu,22.0,kendally@example.com,47000.0,engineering,2023-02-28,3.0,san francisco,True,0
+38,Liam Howard,41.0,liamh@example.com,68000.0,it,2017-10-01,4.1,miami,True,0
+39,Mona Wright,39.0,mona@example.com,85000.0,sales,2021-09-09,3.5,seattle,False,0
+40,Ned Ash,27.0,ned@example.com,48000.0,engineering,2022-11-11,2.6,austin,True,0
+41,Oscar Price,37.0,alice@example.com,80000.0,operations,2020-05-02,3.3,chicago,False,0
+42,Penelope Quinn,30.0,penelope@example.com,51000.0,research,2023-03-17,2.8,san francisco,True,0
+43,Rick Sims,42.0,rick@example.com,92000.0,finance,2019-12-19,4.8,seattle,False,0
+44,Sara James,24.0,sara@example.com,47000.0,sales,2022-06-06,4.5,boston,True,0
+45,Tara Brook,33.0,tarab@example.com,78000.0,marketing,2021-08-15,3.4,los angeles,False,0
+46,Umar Reed,35.0,umar@example.com,69000.0,engineering,2019-03-17,4.2,phoenix,True,0
+47,Violet Cruz,29.0,violet@example.com,59000.0,sales,2022-05-05,4.1,dallas,True,0
+48,Wyatt Moss,53.0,wyatt@example.com,124250.0,finance,2014-06-18,5.0,san diego,True,0
+49,Xena Lane,32.0,xena@example.com,60000.0,it,2019-10-22,4.1,seattle,True,0
+50,Yusuf Amir,26.0,yusuf@example.com,52000.0,engineering,2023-03-01,3.9,boston,True,0
